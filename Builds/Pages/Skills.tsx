@@ -1,6 +1,14 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { FaHandPointUp } from "react-icons/fa";
+import HTML from "../../Visuals/HTML_Icon.png";
+import CSS from "../../Visuals/CSS_Icon.png";
+import JS from "../../Visuals/JS_Icon.png";
+import React from "../../Visuals/React_Icon.png";
+import Tailwind from "../../Visuals/Tailwind_Icon.png";
+import Word from "../../Visuals/Word_Icon.png";
+import Excel from "../../Visuals/Excel_Icon.png";
+import Figma from "../../Visuals/Figma_Icon.png";
 
 function Skills() {
   const PageRef = useRef(null);
@@ -59,7 +67,7 @@ function Skills() {
           >
             <li className="absolute z-0 text-[13vw] text-white">SKILLS</li>
             <motion.a
-              className="absolute flex w-screen flex-col items-center gap-2 text-gray-300 translate-y-[25vw]"
+              className="absolute flex w-screen translate-y-[25vw] flex-col items-center gap-2 text-gray-300"
               style={{
                 opacity: activeIndex === null ? 1 : 0,
                 transition: "opacity 1s ease-in-out",
@@ -85,14 +93,14 @@ function Skills() {
                 const y = 250 * Math.sin(angle);
 
                 const AppsIcon = [
-                  "HTML",
-                  "CSS",
-                  "JS",
-                  "React",
-                  "Tailwind",
-                  "Word",
-                  "Excel",
-                  "Figma",
+                  HTML,
+                  CSS,
+                  JS,
+                  React,
+                  Tailwind,
+                  Word,
+                  Excel,
+                  Figma,
                 ];
                 const SkillsIcon = AppsIcon[index % AppsIcon.length];
 
@@ -148,8 +156,7 @@ function Skills() {
                         className="z-20 aspect-square w-full cursor-pointer rounded-[20%] border-4 border-white"
                         style={{
                           translateY: isActive ? "-20%" : "0%",
-                          background:
-                            "white url(../Visuals/" + SkillsIcon + "_Icon.png)",
+                          background: `white url(${SkillsIcon})`,
                           backgroundSize: "60%",
                           backgroundPosition: "50% 50%",
                           backgroundRepeat: "no-repeat",

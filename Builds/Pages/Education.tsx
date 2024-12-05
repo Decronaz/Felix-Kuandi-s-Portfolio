@@ -1,6 +1,9 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
+import Edu1 from "../../Visuals/SMP-GB.png";
+import Edu2 from "../../Visuals/SMA-Petrus.jpg";
+import Edu3 from "../../Visuals/BINUS.jpg";
 
 function Education() {
   const MainRef = useRef(null);
@@ -71,8 +74,7 @@ function Education() {
             <motion.p
               className="absolute h-full w-full"
               style={{
-                backgroundImage:
-                  "radial-gradient(#00000033, #000000cc), url(../Visuals/SMP-GB.png)",
+                backgroundImage: `radial-gradient(#00000033, #000000cc), url(${Edu1})`,
                 backgroundPosition: "60% 10%",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -106,8 +108,7 @@ function Education() {
             <motion.p
               className="absolute h-full w-full"
               style={{
-                backgroundImage:
-                  "radial-gradient(#00000033, #000000cc), url(../Visuals/SMA-Petrus.jpg)",
+                backgroundImage: `radial-gradient(#00000033, #000000cc), url(${Edu2})`,
                 backgroundPosition: "50% 0%",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -141,8 +142,7 @@ function Education() {
             <motion.p
               className="absolute h-full w-full"
               style={{
-                backgroundImage:
-                  "radial-gradient(#00000033, #000000cc), url(../Visuals/BINUS.jpg)",
+                backgroundImage: `radial-gradient(#00000033, #000000cc), url(${Edu3})`,
                 backgroundPosition: "52% 30%",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",

@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaHandPointUp } from "react-icons/fa";
+import Fontopia1 from "../../Visuals/Fontopia_1.png";
+import Fontopia2 from "../../Visuals/Fontopia_2.png";
+import Fontopia3 from "../../Visuals/Fontopia_3.png";
+import Fontopia4 from "../../Visuals/Fontopia_4.png";
+import FontopiaLogo from "../../Visuals/Fontopia_Logo.png";
 
-const images = [
-  "../Visuals/Fontopia_1.png",
-  "../Visuals/Fontopia_2.png",
-  "../Visuals/Fontopia_3.png",
-  "../Visuals/Fontopia_4.png",
-];
+const images = [Fontopia1, Fontopia2, Fontopia3, Fontopia4];
 
 function Projects() {
   const MainRef = useRef(null);
@@ -105,7 +105,7 @@ function Projects() {
           >
             <div className="flex flex-col items-center justify-center gap-4 px-4 text-white md:gap-[5vh]">
               <img
-                src="../Visuals/Fontopia_Logo.png"
+                src={FontopiaLogo}
                 alt="Fontopia Logo"
                 className="w-3/4 invert md:w-1/3"
               />

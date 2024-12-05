@@ -9,6 +9,8 @@ import {
   FaProjectDiagram,
 } from "react-icons/fa";
 import Profile1 from "../../Visuals/Profile_Image.jpeg";
+import Profile2 from "../../Visuals/Programmer_BG.png";
+import Profile3 from "../../Visuals/About_Me.jpg";
 
 const Profile = () => {
   const PageRef = useRef(null);
@@ -201,8 +203,7 @@ const Profile = () => {
               className="absolute flex h-full w-full items-center"
               style={{
                 backgroundColor: "#000000",
-                backgroundImage:
-                  "linear-gradient(to right, #000000 0%, transparent 50%), url(../Visuals/Programmer_BG.png)",
+                backgroundImage: `linear-gradient(to right, #000000 0%, transparent 50%), url(${Profile2}`,
                 backgroundPosition: "20vw 50%",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -263,8 +264,7 @@ const Profile = () => {
               className="absolute flex h-full w-full items-center"
               style={{
                 backgroundColor: "#000000",
-                backgroundImage:
-                  "linear-gradient(to right, transparent 30%, #000000 75%), url(../Visuals/About_Me.jpg)",
+                backgroundImage: `linear-gradient(to right, transparent 30%, #000000 75%), url(${Profile3}`,
                 backgroundPosition: "0% 50%",
                 backgroundSize: "auto 225%",
                 backgroundRepeat: "no-repeat",
@@ -416,8 +416,7 @@ const Profile = () => {
               className="absolute flex h-full w-full items-center"
               style={{
                 backgroundColor: "#000000",
-                backgroundImage:
-                  "linear-gradient(to right, #000000 20%, transparent 70%), url(../Visuals/Profile_Image.jpeg)",
+                backgroundImage: `linear-gradient(to right, #000000 20%, transparent 70%), url(${Profile1})`,
                 backgroundPosition: "-150% 50%",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -478,8 +477,7 @@ const Profile = () => {
               className="absolute flex h-full w-full items-center"
               style={{
                 backgroundColor: "#000000",
-                backgroundImage:
-                  "linear-gradient(to right, #000000 0%, transparent 50%), url(../Visuals/Programmer_BG.png)",
+                backgroundImage: `linear-gradient(to right, #000000 0%, transparent 50%), url(${Profile2}`,
                 backgroundPosition: "20vw 50%",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
@@ -540,8 +538,7 @@ const Profile = () => {
               className="absolute flex h-full w-full items-center"
               style={{
                 backgroundColor: "#000000",
-                backgroundImage:
-                  "linear-gradient(to right, transparent 30%, #000000 75%), url(../Visuals/About_Me.jpg)",
+                backgroundImage: `linear-gradient(to right, transparent 30%, #000000 75%), url(${Profile3}`,
                 backgroundPosition: "0% 50%",
                 backgroundSize: "auto 225%",
                 backgroundRepeat: "no-repeat",
@@ -638,7 +635,7 @@ const Profile = () => {
         <motion.p
           className="z-10 mt-20 flex aspect-[2/1] w-[90%] items-center justify-center overflow-hidden rounded-[5vw] border-[0.2rem] border-black bg-black shadow-[0_0_0_0.2rem_gray] backdrop-brightness-[25%]"
           style={{
-            backgroundImage: "url(../Visuals/Profile_Image.jpeg)",
+            backgroundImage: `url(${Profile1}`,
             backgroundSize: "cover",
             backgroundPosition: "60% 50%",
             backgroundRepeat: "no-repeat",
@@ -682,7 +679,7 @@ const Profile = () => {
         <motion.p
           className="z-10 mt-10 flex aspect-[2/1] w-[90%] items-center justify-center overflow-hidden rounded-[5vw] border-[0.2rem] border-black bg-black shadow-[0_0_0_0.2rem_gray] backdrop-brightness-[25%]"
           style={{
-            backgroundImage: "url(../Visuals/Programmer_BG.png)",
+            backgroundImage: `url(${Profile2}`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
@@ -724,7 +721,7 @@ const Profile = () => {
         <motion.p
           className="z-10 mt-10 flex aspect-[2/1] w-[90%] items-center justify-center overflow-hidden rounded-[5vw] border-[0.2rem] border-black bg-black shadow-[0_0_0_0.2rem_gray] backdrop-brightness-[25%]"
           style={{
-            backgroundImage: "url(../Visuals/About_Me.jpg)",
+            backgroundImage: `url(${Profile3}`,
             backgroundPosition: "50% 50%",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",

@@ -6,6 +6,7 @@ import { scrollToSkills } from "../Pages/Skills";
 import { scrollToEducation } from "../Pages/Education";
 import { scrollToProjects } from "../Pages/Projects";
 import { changeLerpValue } from "../Effects/Smooth_Scroll";
+import FontopiaLogo from "../../Visuals/Fontopia_Logo.png";
 
 const SocialLink: React.FC<{ href: string; label: string }> = ({
   href,
@@ -69,7 +70,7 @@ function Skills() {
           <div className="flex h-[85%] w-[75%] flex-col-reverse items-center justify-between text-base text-white lg:flex-row">
             <p className="flex h-[20%] flex-col justify-between lg:h-[65%]">
               <a className="hidden items-center gap-2 lg:flex">
-                <img src="./Visuals/Fontopia_Icon.png" className="h-12"></img>
+                <img src={FontopiaLogo} className="h-12"></img>
                 <a className="flex flex-col">
                   <span className="text-4xl leading-[1]">Portfolio</span>
                   <span className="text-base">Felix Kuandi</span>
