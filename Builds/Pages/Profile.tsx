@@ -782,7 +782,7 @@ export const scrollToProfile = () => {
   setTimeout(() => {
     const profileElement = document.getElementById("profile");
     if (profileElement) {
-      const offset = 2 * window.innerHeight;
+      const offset = 3 * window.innerHeight;
       const targetPosition =
         profileElement.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({ top: targetPosition, behavior: "auto" });
