@@ -67,13 +67,13 @@ function Skills() {
           >
             <li className="absolute z-0 text-[13vw] text-white">SKILLS</li>
             <motion.a
-              className="absolute flex w-screen translate-y-[25vw] flex-col items-center gap-2 text-gray-300"
+              className="absolute flex w-screen translate-y-[20vw] flex-col items-center gap-2 text-gray-300"
               style={{
                 opacity: activeIndex === null ? 1 : 0,
                 transition: "opacity 1s ease-in-out",
               }}
             >
-              <span className="text-base font-thin">Click Any App To View</span>
+              <span className="text-sm font-thin">Click Any App To View</span>
               <FaHandPointUp className="text-2xl" />
             </motion.a>
             <motion.li
