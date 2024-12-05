@@ -9,7 +9,7 @@ function App() {
     <>
       <Overlay />
       <SmoothScroll>
-        {/* <MainTitle /> */}
+        <MainTitle />
         <Full_Page />
       </SmoothScroll>
     </>
