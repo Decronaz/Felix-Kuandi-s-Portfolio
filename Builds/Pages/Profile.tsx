@@ -73,7 +73,7 @@ const Profile = () => {
             }}
           >
             <motion.p
-              className="flex h-[80%] flex-col items-center justify-between text-gray-300"
+              className="flex gap-10 flex-col items-center justify-between text-gray-300"
               style={{
                 opacity: useSpring(
                   useTransform(scrollPage, [0 / 1000, 1 / 1000], [1, 0]),
@@ -85,20 +85,6 @@ const Profile = () => {
                 ),
               }}
             >
-              <a className="flex flex-col items-center gap-5 text-center font-light">
-                <motion.span
-                  animate={{ translateY: ["-50%", "50%"] }}
-                  transition={{
-                    duration: 1,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                    ease: "easeInOut",
-                  }}
-                >
-                  <FaArrowUp className="text-3xl" />
-                </motion.span>
-                Scroll Up to Reveal Navigation
-              </a>
               <FaHandPointUp className="text-8xl" />
               <a className="flex flex-col items-center gap-5 text-center font-light">
                 Scroll Down to Reveal Content
@@ -111,7 +97,7 @@ const Profile = () => {
                     ease: "easeInOut",
                   }}
                 >
-                  <FaArrowDown className="text-3xl" />
+                  <FaArrowDown className="text-4xl" />
                 </motion.span>
               </a>
             </motion.p>
