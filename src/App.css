@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fredoka:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
+}
+
+li {
+  list-style: none;
+  font-family: "Fjalla One", sans-serif;
+}
+
+p {
+  margin: 0;
+  display: flex;
+}
+
+span {
+  font-family: inherit;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+#root {
+  overflow-x: clip;
+}
+
+#scrollbar {
+  z-index: 49;
+  position: fixed;
+  top: 50%;
+  translate: 0 -50%;
+  right: 0;
+  width: 0.75vw;
+  height: 98vh;
+  right: 0.5vw;
+  mix-blend-mode: difference;
+}
+
+#scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 100rem;
+}
