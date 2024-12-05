@@ -8,6 +8,7 @@ import {
   FaHandPointUp,
   FaProjectDiagram,
 } from "react-icons/fa";
+import Profile1 from "../../Visuals/Profile_Image.jpeg";
 
 const Profile = () => {
   const PageRef = useRef(null);
@@ -139,8 +140,7 @@ const Profile = () => {
               className="absolute flex h-full w-full items-center"
               style={{
                 backgroundColor: "#000000",
-                backgroundImage:
-                  "linear-gradient(to right, #000000 20%, transparent 70%), url(../Visuals/Profile_Image.jpeg)",
+                backgroundImage: `linear-gradient(to right, #000000 20%, transparent 70%), url(${Profile1})`,
                 backgroundPosition: "-150% 50%",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
