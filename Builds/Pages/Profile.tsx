@@ -181,7 +181,7 @@ const Profile = () => {
                     cursor={true}
                     repeat={Infinity}
                     className="mt-2 text-[3vw] font-[500] text-white"
-                    speed={99}
+                    speed={1}
                   />
                 </motion.h2>
                 <motion.h3
@@ -458,7 +458,7 @@ const Profile = () => {
                     cursor={true}
                     repeat={Infinity}
                     className="mt-2 text-[3vw] font-[500] text-white"
-                    speed={99}
+                    speed={1}
                   />
                 </motion.h2>
                 <motion.h3
@@ -666,7 +666,7 @@ const Profile = () => {
             wrapper="a"
             cursor={true}
             repeat={Infinity}
-            speed={99}
+            speed={1}
           />
         </motion.h2>
         <motion.h3
