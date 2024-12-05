@@ -162,4 +162,14 @@ export const scrollToProjects = () => {
   }, 1000);
 };
 
+export const scrollToProjectsRes = () => {
+  const projectsElement = document.getElementById("projects");
+  if (projectsElement) {
+    const offset = 0.25 * window.innerHeight;
+    const targetPosition =
+      projectsElement.getBoundingClientRect().top + window.scrollY + offset;
+    window.scrollTo({ top: targetPosition, behavior: "auto" });
+  }
+};
+
 export default Projects;

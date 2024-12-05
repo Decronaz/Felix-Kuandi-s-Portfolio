@@ -1,11 +1,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
-import { scrollToProfile } from "../Pages/Profile";
-import { scrollToSkills } from "../Pages/Skills";
-import { scrollToEducation } from "../Pages/Education";
-import { scrollToProjects } from "../Pages/Projects";
-import { changeLerpValue } from "../Effects/Smooth_Scroll";
+import { scrollToProfileRes } from "../Pages/Profile";
+import { scrollToSkillsRes } from "../Pages/Skills";
+import { scrollToEducationRes } from "../Pages/Education";
+import { scrollToProjectsRes } from "../Pages/Projects";
+import { changeLerpValueRes } from "../Effects/Smooth_Scroll";
 import FontopiaIcon from "../../Visuals/Fontopia_Icon.png";
 
 const SocialLink: React.FC<{ href: string; label: string }> = ({
@@ -29,20 +29,20 @@ const SocialLink: React.FC<{ href: string; label: string }> = ({
 
 const sections: Record<string, () => void> = {
   "About Me": () => {
-    changeLerpValue(1);
-    scrollToProfile();
+    changeLerpValueRes(1);
+    scrollToProfileRes();
   },
   Skills: () => {
-    changeLerpValue(1);
-    scrollToSkills();
+    changeLerpValueRes(1);
+    scrollToSkillsRes();
   },
   Education: () => {
-    changeLerpValue(1);
-    scrollToEducation();
+    changeLerpValueRes(1);
+    scrollToEducationRes();
   },
   Projects: () => {
-    changeLerpValue(1);
-    scrollToProjects();
+    changeLerpValueRes(1);
+    scrollToProjectsRes();
   },
 };
 

@@ -800,4 +800,23 @@ export const scrollToProfile = () => {
   }, 1000);
 };
 
+export const scrollToProfileRes = () => {
+  const profileElement = document.getElementById("profile");
+  if (profileElement) {
+    const offset = 3 * window.innerHeight;
+    const targetPosition =
+      profileElement.getBoundingClientRect().top + window.scrollY + offset;
+    window.scrollTo({ top: targetPosition, behavior: "auto" });
+  }
+
+  const profileResponsiveElement = document.getElementById("profileresponsive");
+  if (profileResponsiveElement) {
+    const offset = -1 * window.innerHeight;
+    const targetPosition =
+      profileResponsiveElement.getBoundingClientRect().top +
+      window.scrollY +
+      offset;
+    window.scrollTo({ top: targetPosition, behavior: "auto" });
+  }
+};
 export default Profile;

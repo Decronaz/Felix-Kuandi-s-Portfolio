@@ -286,4 +286,11 @@ export const scrollToEducation = () => {
   }, 1000);
 };
 
+export const scrollToEducationRes = () => {
+  const element = document.getElementById("education");
+  if (element) {
+    element.scrollIntoView({ behavior: "auto" });
+  }
+};
+
 export default Education;

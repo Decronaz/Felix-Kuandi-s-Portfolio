@@ -203,4 +203,14 @@ export const scrollToSkills = () => {
   }, 1000);
 };
 
+export const scrollToSkillsRes = () => {
+  const skillsElement = document.getElementById("skills");
+  if (skillsElement) {
+    const offset = window.innerHeight;
+    const targetPosition =
+      skillsElement.getBoundingClientRect().top + window.scrollY + offset;
+    window.scrollTo({ top: targetPosition, behavior: "auto" });
+  }
+};
+
 export default Skills;

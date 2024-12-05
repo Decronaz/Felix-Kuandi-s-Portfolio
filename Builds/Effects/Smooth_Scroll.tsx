@@ -39,4 +39,13 @@ export const changeLerpValue = (value: number) => {
   }
 };
 
+export const changeLerpValueRes = (value: number) => {
+  if (setLerpValue) {
+    setLerpValue(value);
+    setTimeout(() => {
+      setLerpValue(0.05);
+    }, 1000);
+  }
+};
+
 export default SmoothScroll;

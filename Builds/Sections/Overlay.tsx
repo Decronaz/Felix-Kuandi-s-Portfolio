@@ -18,6 +18,7 @@ import { scrollToEducation } from "../Pages/Education";
 import { scrollToProjects } from "../Pages/Projects";
 import { changeLerpValue } from "../Effects/Smooth_Scroll";
 import { motion } from "framer-motion";
+import MyCV from "../../Visuals/Felix_Kuandi's_CV.pdf";
 
 function Overlay() {
   const sections = [
@@ -122,7 +123,7 @@ function Overlay() {
         <p className="text-md flex items-center gap-2 lg:gap-5">
           <a
             className="group relative flex cursor-pointer items-center justify-center overflow-hidden text-nowrap rounded-lg border-2 border-[#ffffff] px-2 py-2 lg:px-2 lg:py-1"
-            href="../Visuals/Felix_Kuandi's_CV.pdf"
+            href={MyCV}
             download
           >
             <span className="absolute aspect-square w-[0%] rounded-full bg-white transition-all duration-500 group-hover:w-[140%] lg:group-hover:w-[120%]"></span>
@@ -225,7 +226,7 @@ const TabButton = ({
       selected
         ? "text-[#000000]"
         : "text-[#ffffff] hover:bg-[#ffffff22] hover:text-[#ffffffcc]"
-    } rounded:unset lg-rounded-lg relative flex h-10 w-[6.8rem] items-center justify-center lg:w-16`}
+    } relative flex h-10 w-[6.8rem] items-center justify-center rounded-[unset] lg:w-16 lg:rounded-lg`}
   >
     <span className="relative z-10">{icon}</span>
     {selected && (
